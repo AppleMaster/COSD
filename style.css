@@ -1,0 +1,46 @@
+body {
+    background: rgb(79, 11, 11);
+    color: #fff;
+    font-family: sans-serif;
+    font-size: 70px;
+    text-align: center;
+    padding-top: 300px;
+    font-family: 'Shadows Into Light';
+}
+
+audio {
+    display: none;
+}
+
+.thames img{
+    width: 150px;
+    -webkit-animation: river 15s infinite linear;
+    position: absolute;
+    z-index: 2;
+}
+
+.sun {
+    position: absolute;
+    top: 200px;
+    left: 40%;
+    width: 100px;
+    height: 100px;
+    background-color: yellow;
+    z-index: 1;
+    border-radius: 50%;
+    -webkit-animation: sun 15s infinite linear;
+}
+
+@-webkit-keyframes river {
+  0% { top: 500px; left: 0; }
+  50% { top: 200px; left: 40% }
+  100% { top: 500px; left: 100%; }
+}
+
+@-webkit-keyframes sun {
+  0% { background-color: yellow; }
+  38% {background-color: yellow;}
+  48% { background-color: #000;}
+  62% {background-color: yellow;}
+  100% {background-color: yellow;}
+}

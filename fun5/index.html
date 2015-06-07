@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Black Market Lizards?</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+</head>
+<body>
+
+<img src="http://www.herpetofauna.co.uk/ident_images/Lacertaviviparamale.jpg">
+
+
+<script>
+
+var visitTrue = "true";
+document.cookie = "visited=" + visitTrue + ";";
+
+console.log(visitTrue);
+
+if (visitTrue.length > 1) {
+	console.log('beenthere')
+}
+else {
+	$('img').addClass('.animate');
+}
+
+
+</script>
+
+
+
+</body>
+</html>

@@ -1,0 +1,107 @@
+body {
+    background: rgb(103, 69, 8);
+    color: #fff;
+    font-family: sans-serif;
+    font-size: 70px;
+    text-align: center;
+    padding-top: 300px;
+    font-family: 'Shadows Into Light';
+    overflow: hidden;
+}
+
+audio {
+    display: none;
+}
+
+
+
+/*.sun {
+    position: absolute;
+    top: 200px;
+    left: 40%;
+    width: 100px;
+    height: 100px;
+    background-color: yellow;
+    z-index: 1;
+    border-radius: 50%;
+    -webkit-animation: sun 15s infinite linear;
+}*/
+
+.sun {
+  background: url('sun.png');
+    position: absolute;
+    background-size: contain;
+    top: 200px;
+    left: 40%;
+    width: 100px;
+    height: 100px;
+    -webkit-animation: spin 5s infinite linear;
+}
+
+
+.sun2 {
+  background: url('sun2.png');
+    position: absolute;
+    background-size: contain;
+    top: 200px;
+    left: 40%;
+    width: 100px;
+    height: 100px;
+
+    opacity: 0;
+    -webkit-animation: opac 15s infinite linear;
+}
+
+.spin {
+      -webkit-animation: spin 5s infinite linear;
+}
+
+.box {
+  width: 50px;
+  height: 50px;
+  background-color: #aaa;
+}
+
+
+
+.thames {
+  position: absolute;
+  background: url('http://www.bbc.co.uk/staticarchive/753f1728994475a79b37317c189363c9c6d73a20.jpg');
+  width: 100px;
+  height: 100px;
+  -webkit-animation: river 15s infinite linear;
+  z-index: 2;
+  border-radius: 50%;
+}
+
+@-webkit-keyframes river {
+  0% { top: 500px; left: 0; }
+  50% { top: 200px; left: 40% }
+  100% { top: 500px; left: 100%; }
+}
+
+@-webkit-keyframes sun {
+  0% { background-color: yellow; }
+  38% {background-color: yellow;}
+  48% { background-color: #000;}
+  62% {background-color: yellow;}
+  100% {background-color: yellow;}
+}
+
+@-webkit-keyframes spin {
+  0% {transform: rotate(0deg);}
+  100% {transform: rotate(360deg);}
+}
+
+@-webkit-keyframes opac {
+  0%,38%,62%,100% {opacity: 0;}
+  48% {opacity: 1;}
+}
+
+
+
+
+
+
+
+
